@@ -1,0 +1,12 @@
+#include <sys/stat.h>
+#include <stdio.h>
+#include <errno.h>
+int main(){
+    nwrite = write(1,"Hello World!\n", 13);
+    write(1,"Hello World!\n", 13);
+    if(nwrite < 0){
+        perror ("read buf");
+        return errno;
+    }
+        
+}
